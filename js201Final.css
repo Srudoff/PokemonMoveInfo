@@ -1,0 +1,142 @@
+*
+{
+    box-sizing: border-box;
+}
+
+#box
+{
+    border: 2px solid red;
+}
+
+#container
+{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 25px 0;
+}
+
+#randomButton
+{
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 10%;
+}
+
+.input
+{
+    width: 50%;
+    text-align: center;
+    margin: 25px auto;
+    height: 50px;
+}
+
+.input h3
+{
+    display: inline-block;
+}
+
+.input select
+{
+    border:1px solid blue;
+    height: 25px;
+    text-transform: capitalize;
+}
+
+.pokeinfo
+{
+    flex-basis: 33%;
+    height: 750px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.pokeimg
+{
+    position: absolute; 
+    margin: 25px;
+    top: 0;
+    right: 0;
+    bottom: 50%;
+    left: 0;
+    text-align: center;
+    background-image: url(free_pokemon_xy_battle_bgs_by_midnitez_remix_d6mbpqp-fullview.png); /* background image by Midnitez-REMIX on DeviantArt */
+    background-position: top;
+    background-size: cover;
+    border: 2px solid black;
+}
+
+.pokeimg img
+{
+    height: 100%;
+}
+
+.learnset
+{
+    flex-wrap: wrap;
+    position: absolute;
+    margin: 25px;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.move-tile
+{
+    display: inline-block;
+    border: 1px solid #333;
+    padding: 5px;
+    margin: 3px;
+    text-transform: capitalize;
+}
+
+.randomize
+{
+    flex-basis: 33%;
+    height: 750px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    border-right: 2px solid #999;
+    border-left: 2px solid #999;
+
+}
+
+.pokemoves
+{
+    height: 55%;
+}
+
+.pokemovesUI
+{
+    width: 100%;
+    position: absolute;
+    height: 150px;
+    top: 45%;
+    left: 0;
+    right: 0;
+}
+
+.slot
+{
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    font-weight: bold;
+    width: 100%;
+    margin: 20px 0;
+    border: 2px solid #333;
+    text-transform: capitalize;
+}
+
+.output
+{
+    flex-basis: 33%;
+    height: 750px;
+    margin: 0 auto;
+    padding: 20px;
+}

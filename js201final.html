@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pokemon Move Effect Calculator</title>
+    <link rel="stylesheet" href="./js201Final.css">
+</head>
+<body>
+
+    <div class="input">
+        <h3>Pokemon: </h3>
+    
+        <select name="selected-pokemon" id="pokeSelect">
+            <option value="default-is-selected">Select Pokemon</option>
+        </select>
+        <button type="submit" id="pokeSelectBtn">Select</button>
+    </div>
+    
+
+    <div id="container">
+
+        <div class="pokeinfo">
+            <div class="pokeimg"><img id="pokeImg"></div>
+
+            <div id="container">
+                <div class="learnset" id="moveList"></div>
+            </div>
+        </div>
+
+
+        <div class="randomize" id="randomize"> 
+            <div class="pokemoves" id="pokemoves"></div>
+            
+            <div id="container">
+                <div class="pokemovesUI">Click moves in the list!
+                <h3>OR</h3>
+                <button class="pokemovesUI" type="submit" id="randomButton">Randomize!</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="output" id="output"></div>
+
+    </div>
+
+
+
+    <script src="js201final.js"></script>
+</body>
+</html>
