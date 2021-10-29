@@ -72,7 +72,7 @@ let colorTile = (typeName) =>
     }
 }
 
-
+// fetch data from all Pokemon in API
 fetch('https://pokeapi.co/api/v2/pokemon?limit=1118&offset=0')
     .then(response => response.json()) 
     .then(data => {
@@ -86,6 +86,7 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=1118&offset=0')
             pokeSelect.appendChild(opt); 
         }
         
+        // Select a Pokemon from the dropdown list
         document.getElementById("pokeSelectBtn").addEventListener("click", function() {
             let selectedPoke = pokeSelect.value - 1;
             fetch(pokeList[selectedPoke]["url"]) 
@@ -102,6 +103,7 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=1118&offset=0')
                         pokemoves.innerHTML = '';
                     }
                     
+                    // Create a list of moves the Pokemon can learn and color them based on move type
                     moveArr.forEach(learnableMove => 
                     {
                         var move = document.createElement("div"); 
@@ -133,6 +135,7 @@ fetch('https://pokeapi.co/api/v2/pokemon?limit=1118&offset=0')
 
     });
       
+// Select moves in order to see the move's type and effectiveness
 featureMove = (content, type, damageClass) =>
 {
     if(pokemoves.children.length <= 3)
@@ -151,6 +154,7 @@ featureMove = (content, type, damageClass) =>
 
 }
 
+// Randomly pick moves from the list of learnable moves
 document.getElementById("randomButton").addEventListener("click", function()
 {
     if(pokemoves.children.length <= 3)
@@ -163,6 +167,7 @@ document.getElementById("randomButton").addEventListener("click", function()
 
 });
 
+// Fetch information on what types each move is super effective
 calculateEffectiveness = (type) =>
 {
     
